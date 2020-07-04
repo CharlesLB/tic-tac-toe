@@ -4,16 +4,11 @@ import "./styles.css";
 
 type SquareValue = "X" | "O" | null;
 
-interface SquareProps {
-  onClick(): void;
-  value: SquareValue;
-}
-
-const Square: React.FC<SquareProps> = (props) => {
+const Square: React.FC = () => {
   return (
-    <button className="square" onClick={props.onClick}>
-      {props.value}
-    </button>
+    <div className="square O">
+        X
+    </div>
   );
 };
 

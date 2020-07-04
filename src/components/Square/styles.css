@@ -1,0 +1,17 @@
+.square{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #14bdac;
+  font-family: sans-serif;
+  font-size: 5rem;
+}
+
+.square.O{
+  color: #f2ebd3;
+}
+
+.square.X{
+  color: #545454;
+}
+
