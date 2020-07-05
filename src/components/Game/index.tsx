@@ -28,6 +28,7 @@ const calculateWinner = (squares: SquareValue[]): SquareValue => {
 const Game: React.FC = () => {
   const [xIsNext, setXIsNext] = useState<boolean>(true);
   const [stepNumber, setStepNumber] = useState<number>(0);
+  
   const [history, setHistory] = useState<{ squares: SquareValue[] }[]>([
     {
       squares: Array(9).fill(null),
@@ -62,7 +63,7 @@ const Game: React.FC = () => {
   const winner = calculateWinner(current.squares);
 
   const moves = history.map((step, move) => {
-    const desc = move ? "Go to move #" + move : "Go to game start";
+    const desc = move ? "Ir para o lance " + move : "Reiniciar";
     return (
       <li key={move}>
         <button onClick={() => jumpTo(move)}>{desc}</button>
@@ -72,7 +73,7 @@ const Game: React.FC = () => {
 
   let status;
   if (winner) {
-    status = "Winner: " + winner;
+    status = "Vencedor: " + winner;
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
@@ -84,7 +85,7 @@ const Game: React.FC = () => {
       </div>
       <div className="game-info">
         <div>{status}</div>
-        <ol>{moves}</ol>
+        <ul>{moves}</ul>
       </div>
     </div>
   );

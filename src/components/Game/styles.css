@@ -15,11 +15,27 @@ body{
     background-color: #eee;
 }
 
+button{
+    padding: .3rem 1rem .3rem 1rem;
+    margin: 5px;
+    background-color: #14bdac;
+    color: #f2ebd3;
+    border: solid 1px #14bdac;
+    border-radius: 0.75rem;
+    outline: none;
+}
+
+button:hover{
+    background-color: #f2ebd3;
+    color: #14bdac;
+    border: solid 1px #14bdac;
+}
+
 .game{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .game .container{
@@ -27,4 +43,13 @@ body{
     background-color: #14bdac;
     padding: 3rem;
     border-radius: 0.75em;
+}
+
+.game .game-info{
+    margin-left: 20px;
+    height: 100%;
+}
+
+.game .game-info ul{
+    list-style: none;
 }
