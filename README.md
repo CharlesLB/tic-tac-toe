@@ -4,9 +4,7 @@
 
 <p align="center">
   <a>
-  <img alt="Language" src="https://img.shields.io/badge/language-NodeJS-brightgreen">
   <img alt="Language" src="https://img.shields.io/badge/language-ReactJS-brightgreen">
-  <img alt="Language" src="https://img.shields.io/badge/language-React Native-brightgreen">
   <img alt="Language" src="https://img.shields.io/badge/language-Typescript-brightgreen">
 
 </p>
